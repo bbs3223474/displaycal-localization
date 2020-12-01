@@ -264,7 +264,7 @@
 "argyll.util.not_found": |-
   ArgyllCMS “%s” 可执行文件未找到！
 "as_measured": |-
-  已测量
+  按测量值
 "audio.lib": |-
   声音模块: %s
 "auth": |-
@@ -300,7 +300,7 @@
 "black_xyz": |-
   黑色 XYZ
 "blacklevel": |-
-  黑电平
+  黑电平亮度
 "blue": |-
   蓝色
 "blue_gamma": |-
@@ -424,7 +424,7 @@
 "calibration.loading_from_display_profile": |-
   加载当前显示设备配置文件校准曲线...
 "calibration.luminance": |-
-  白电平
+  白点亮度
 "calibration.lut_viewer.title": |-
   曲线
 "calibration.preserve": |-
@@ -1505,13 +1505,13 @@
 "instrument": |-
   校色仪
 "instrument.calibrate": |-
-  将不透光的盖子放在校色仪上（如果适用），或放在黑暗的无光泽表面上，或校准参考上（如果适用），并按“确定”校准校色仪。
+  将校色仪的的盖子合上（如果有），或放在黑暗的无光泽表面上，或放在校色仪的色卡上（如果有），并按“确定”校准校色仪。
 "instrument.calibrate.colormunki": |-
-  将 ColorMunki 传感器放在校准位置并按“确定”校准校色仪。
+  将 ColorMunki 传感器设为自测校准，并按“确定”校准校色仪。
 "instrument.calibrate.reflective": |-
-  将校色仪放在其反射白色参考序列号 no. %s 上并按“确定”校准校色仪。
+  将校色仪放在其反光白色色卡 no. %s 上并按“确定”校准校色仪。
 "instrument.calibrate.spyderx": |-
-  将不透光的盖子放在校色仪上，或放在黑暗的无光泽表面上，并按“确定”校准校色仪。
+  将校色仪的盖子合上，或放在黑暗的无光泽表面上，并按“确定”校准校色仪。
 "instrument.calibrating": |-
   正在校准校色仪...
 "instrument.colormunki": |-
@@ -1521,7 +1521,7 @@
 "instrument.initializing": |-
   正在设置校色仪，请稍候...
 "instrument.measure_ambient": |-
-  如果校色仪需要特殊的盖子来测量测环境，请装上它。要测量环境光线，将校色仪向上放置在显示器旁边。如果要测量观察箱，将无同色异谱灰卡放置在箱内并将校色仪指向它。有关如何测量环境的更多说明可在校色仪文档中找到。按“确定”开始测量。
+  如果校色仪需要特殊的盖子来测量测环境光，请装上它。要测量环境光线，将校色仪向上放置在显示器旁边。如果要测量观察池，将无同色异谱灰卡放置在池内并将校色仪指向它。有关如何测量环境的更多说明可在校色仪文档中找到。按“确定”开始测量。
 "instrument.place_on_screen": |-
   将校色仪放在测试窗口上并单击“确定”继续。
 "instrument.place_on_screen.madvr": |-
@@ -1565,12 +1565,12 @@
 "lut_access": |-
   视频卡伽玛表访问
 "*lut_access.unsupported": |-
-  Your graphics drivers or hardware do not support loadable gamma ramps or calibration. You may need to update your device drivers.
+  您的显卡驱动或硬件不支持加载伽玛斜坡或校准，请尝试升级驱动程序。
 "*macos.bugs.cal.warning": |-
-  Applications using the Apple CMM (color management module), like macOS Preview and QuickLook, do not support calibration black point hue correction.
-  Applications that use their own color management are not affected (like Adobe Creative Suite using Adobe ACE, or open source graphics applications using littleCMS like GIMP or Krita, or applications employing 3D LUTs for color management).
+  使用Apple CMM（色彩管理模块）的应用程序，例如macos Preview和QuickLook，不支持校准黑点色度。
+  自带色彩管理的应用程序不会受到影响（例如使用了Adobe ACE的Adobe Creative套件；或使用了littleCMS的开源绘图软件，例如GIMP或Krita；以及使用了3D LUTs的程序）。
   
-  Do you want to disable calibration black point hue correction?
+  您是否想要关闭黑点色度校准？
 "*macos.bugs.profile.warning": |-
   Applications using the Apple CMM (color management module), like macOS Preview and QuickLook, do not support display profile types other than single curve + matrix with black point compensation.
   Applications that use their own color management are not affected (like Adobe Creative Suite using Adobe ACE, or open source graphics applications using littleCMS like GIMP or Krita, or applications employing 3D LUTs for color management).
@@ -1662,7 +1662,7 @@
 "measurement_mode.generic": |-
   常规
 "measurement_mode.highres": |-
-  高解析度
+  高分辨率
 "measurement_mode.lcd": |-
   液晶 (常规)
 "measurement_mode.lcd.ccfl": |-
@@ -1670,7 +1670,7 @@
 "measurement_mode.lcd.ccfl.2": |-
   液晶 CCFL背光 类型 2
 "measurement_mode.lcd.oled": |-
-  OLED面板
+  OLED自发光
 "measurement_mode.lcd.white_led": |-
   液晶 W-LED背光
 "measurement_mode.lcd.wide_gamut.ccfl": |-
@@ -2610,7 +2610,7 @@
 "white": |-
   白色
 "whitepoint": |-
-  白点
+  白点值
 "whitepoint.colortemp": |-
   色温
 "whitepoint.colortemp.locus.blackbody": |-
